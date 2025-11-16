@@ -360,7 +360,7 @@ def train_bert(
     model_name="roberta-base",
     max_len=256,
     batch=8,
-    epochs=2,
+    epochs=10,
     lr=2e-5,
 ):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -502,7 +502,7 @@ def run_category(train_path, test_path, out_path):
         model_name="roberta-base",
         max_len=256,
         batch=8,
-        epochs=2,
+        epochs=10,
         lr=2e-5,
     )
 
